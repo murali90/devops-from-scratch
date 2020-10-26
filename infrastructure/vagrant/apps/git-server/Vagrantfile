@@ -13,7 +13,8 @@ Vagrant.configure("2") do |config|
 
     git_server.vm.provision "shell", inline: <<-SHELL
       echo "Adding SSH Key"
-      echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDA5Xv55ZTwhBiXvTpsLUyrIghNs1wudPGLDeJ5pUTingJwwPizczSNwui+1FYKRs0UGjAGruUHYboiUOhJ37DZIWWJR8wKg10b+V/Uxv3b0xbV87dd7suZiUgPnK7y24IyCfelGD//dRmePQVbaszcOhctJyeJNgKigqc0MUEYaJWBQPfwN6TuBBSMsX4eDvdjJ0WQYCCzXU0SScZnwxtyozstizA+AzzsWmcZsXzfkNsxgNtKwLNTJ3z8/IQZlVIMt9RyRIF7U8EuuPfRYsmm63KIU2keBSvNb/02m4MDitvu3WXI7UdidXBYdwU0LZiuHGXRAsSILvPIAJv1zQYT' >> /home/vagrant/.ssh/authorized_keys
+      echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC84q7fw+wfx1lPh5dch0R7sVwksfJABDBeQImOurPrsHp4tcWCzRbZB67xhnysGEpsbIZ6EFmM7DdDxAxuo92VCwvysznFgGQZhxsjnyL5y6w55kIywPM4m9GAmMxWSP2MkjQKcrMfEzNgs6z1bIzcJmfz+r3WR4Oqd8vbQd3sMZzdNlNrIN5Btf1D5WxCx7eRxWHvOvOFKYeJyZ7L/09Z8E4LH+2DCAb3lC0VB40JPI1FwpmhfYHaxKF2JlpCjvi3qrS0VntWhw1tdhH/J9tdBu5BhsQEbYsu/Ych8DhZhhVc00N2oJuhxU+90yl/HHhL5Jgo054KHSIchCZM6/03 root@debian
+' >> /home/vagrant/.ssh/authorized_keys
     SHELL
   end
 
